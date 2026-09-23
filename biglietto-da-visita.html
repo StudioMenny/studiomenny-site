@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biglietto da visita — Menny</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%230b0e1c'/%3E%3Cellipse cx='50' cy='56' rx='36' ry='10' fill='none' stroke='%234be3d6' stroke-width='4' transform='rotate(-18 50 56)'/%3E%3Ccircle cx='50' cy='46' r='18' fill='%234be3d6'/%3E%3C/svg%3E">
+<meta name="description" content="Inquadra il QR code per aprire il sito di Menny.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="scroll-progress" aria-hidden="true"></div>
+<div id="cursor-glow" aria-hidden="true"></div>
+<canvas id="starfield" aria-hidden="true"></canvas>
+<div class="ambient" aria-hidden="true"></div>
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo">MENNY<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="servizi.html">Servizi</a></li>
+      <li><a href="progetti.html">Progetti</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contatti.html" class="btn btn-ghost btn-sm">Contattami</a>
+    </div>
+    <button class="menu-toggle" aria-label="Apri menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero wrap">
+    <span class="eyebrow">Biglietto da visita</span>
+    <h1>Inquadra e scopri i miei progetti</h1>
+    <p>Il QR code porta dritto alla home del sito. Puoi scaricarlo o stampare direttamente questa pagina.</p>
+  </section>
+
+  <section class="section compact">
+    <div class="wrap">
+      <div class="card-stage">
+        <div class="business-card reveal-up">
+          <div class="logo">MENNY<span>.</span></div>
+          <p class="tagline">Siti web per attività locali</p>
+          <div id="qr-holder" data-url="https://www.studiomenny.it/"></div>
+          <p class="site-url">www.studiomenny.it</p>
+          <div class="card-actions">
+            <button id="download-qr" class="btn btn-ghost btn-sm">Scarica PNG</button>
+            <button onclick="window.print()" class="btn btn-ghost btn-sm">Stampa</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <a href="index.html" class="logo" style="font-size:16px;">MENNY<span>.</span></a>
+    <ul class="footer-links">
+      <li><a href="progetti.html">Progetti</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+      <li><a href="https://github.com/menny28" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+    <span class="footer-note">© <span id="footer-year">2026</span> Menny — Siti web per attività locali</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="js/qr.js"></script>
+</body>
+</html>

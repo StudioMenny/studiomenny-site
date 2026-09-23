@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servizi — Menny</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%230b0e1c'/%3E%3Cellipse cx='50' cy='56' rx='36' ry='10' fill='none' stroke='%234be3d6' stroke-width='4' transform='rotate(-18 50 56)'/%3E%3Ccircle cx='50' cy='46' r='18' fill='%234be3d6'/%3E%3C/svg%3E">
+<meta name="description" content="Progettazione, sviluppo e assistenza: cosa faccio quando costruisco un sito per la tua attività, e come lavoro passo dopo passo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="scroll-progress" aria-hidden="true"></div>
+<div id="cursor-glow" aria-hidden="true"></div>
+<canvas id="starfield" aria-hidden="true"></canvas>
+<div class="ambient" aria-hidden="true"></div>
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo">MENNY<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="servizi.html" class="is-current">Servizi</a></li>
+      <li><a href="progetti.html">Progetti</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contatti.html" class="btn btn-ghost btn-sm">Contattami</a>
+    </div>
+    <button class="menu-toggle" aria-label="Apri menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero wrap">
+    <span class="eyebrow">Cosa faccio</span>
+    <h1>Un sito, pensato dall'inizio alla fine</h1>
+    <p>Non vendo pagine preconfezionate: ogni sito nasce dal modo in cui lavora davvero l'attività che rappresenta.</p>
+  </section>
+
+  <section class="section compact">
+    <div class="wrap">
+      <div class="services">
+        <div class="service-card reveal-up">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l7-9 7 9-7 9-7-9z"/><path d="M3 12h14"/></svg></div>
+          <h3>Progettazione</h3>
+          <p>Studio l'attività, il pubblico e cosa deve fare chi arriva sul sito, prima ancora di aprire un editor.</p>
+        </div>
+        <div class="service-card reveal-up">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg></div>
+          <h3>Sviluppo</h3>
+          <p>Costruisco pagine veloci e curate nei dettagli, dal menu del ristorante al catalogo del negozio.</p>
+        </div>
+        <div class="service-card reveal-up">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+          <h3>Assistenza</h3>
+          <p>Resto a disposizione dopo la pubblicazione, per aggiornamenti, modifiche e piccoli miglioramenti.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="wrap">
+      <div class="section-head reveal-up">
+        <span class="eyebrow">Come lavoro</span>
+        <h2>Dal primo contatto al sito online</h2>
+        <p>Un percorso semplice, in quattro passaggi, dalla prima chiacchierata fino alla pubblicazione.</p>
+      </div>
+      <div class="process">
+        <div class="process-step reveal-up">
+          <span class="process-num">01</span>
+          <h3>Contatto</h3>
+          <p>Mi racconti la tua attività, cosa ti serve e chi sono i tuoi clienti.</p>
+        </div>
+        <div class="process-step reveal-up">
+          <span class="process-num">02</span>
+          <h3>Progetto</h3>
+          <p>Ti propongo una struttura e uno stile pensati apposta per te, non un template.</p>
+        </div>
+        <div class="process-step reveal-up">
+          <span class="process-num">03</span>
+          <h3>Sviluppo</h3>
+          <p>Costruisco il sito, con revisioni insieme finché non è esattamente come lo vuoi.</p>
+        </div>
+        <div class="process-step reveal-up">
+          <span class="process-num">04</span>
+          <h3>Online</h3>
+          <p>Pubblico il sito e resto disponibile per modifiche e assistenza dopo il lancio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="wrap">
+      <div class="contact-panel reveal-up">
+        <span class="eyebrow">Iniziamo</span>
+        <h2 style="margin-top:16px;">Ti interessa per la tua attività?</h2>
+        <p>Guarda qualche esempio concreto o scrivimi direttamente per parlarne.</p>
+        <div class="contact-actions">
+          <a href="progetti.html" class="btn btn-ghost">Guarda i progetti</a>
+          <a href="contatti.html" class="btn btn-primary">Contattami</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <a href="index.html" class="logo" style="font-size:16px;">MENNY<span>.</span></a>
+    <ul class="footer-links">
+      <li><a href="progetti.html">Progetti</a></li>
+      <li><a href="biglietto-da-visita.html">Biglietto da visita</a></li>
+      <li><a href="https://github.com/menny28" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+    <span class="footer-note">© <span id="footer-year">2026</span> Menny — Siti web per attività locali</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
