@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contatti — Menny</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%230b0e1c'/%3E%3Cellipse cx='50' cy='56' rx='36' ry='10' fill='none' stroke='%234be3d6' stroke-width='4' transform='rotate(-18 50 56)'/%3E%3Ccircle cx='50' cy='46' r='18' fill='%234be3d6'/%3E%3C/svg%3E">
+<meta name="description" content="Contattami per parlare del sito della tua attività: email o WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="scroll-progress" aria-hidden="true"></div>
+<div id="cursor-glow" aria-hidden="true"></div>
+<canvas id="starfield" aria-hidden="true"></canvas>
+<div class="ambient" aria-hidden="true"></div>
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo">MENNY<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="servizi.html">Servizi</a></li>
+      <li><a href="progetti.html">Progetti</a></li>
+      <li><a href="contatti.html" class="is-current">Contatti</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contatti.html" class="btn btn-ghost btn-sm">Contattami</a>
+    </div>
+    <button class="menu-toggle" aria-label="Apri menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero wrap">
+    <span class="eyebrow">Contatti</span>
+    <h1>Parliamo del tuo <span class="grad-text">progetto</span>.</h1>
+    <p>Hai un'attività e vuoi un sito fatto su misura? Scrivimi: si parte da una chiacchierata, senza impegno.</p>
+  </section>
+
+  <section class="section compact">
+    <div class="wrap">
+      <div class="contact-panel reveal-up">
+        <div class="contact-actions">
+          <a href="mailto:studiomenny.web@gmail.com" class="btn btn-primary">Scrivimi una mail</a>
+          <a href="https://wa.me/393665488260" target="_blank" rel="noopener" class="btn btn-ghost">Scrivimi su WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="contact-methods">
+        <div class="contact-method reveal-up">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg></div>
+          <h3>Email</h3>
+          <p>studiomenny.web@gmail.com</p>
+        </div>
+        <div class="contact-method reveal-up">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h3>WhatsApp</h3>
+          <p>+39 366 548 8260</p>
+        </div>
+        <div class="contact-method reveal-up">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg></div>
+          <h3>Biglietto da visita</h3>
+          <p><a href="biglietto-da-visita.html" style="color:var(--cyan); font-weight:600;">Inquadra il QR code →</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <a href="index.html" class="logo" style="font-size:16px;">MENNY<span>.</span></a>
+    <ul class="footer-links">
+      <li><a href="progetti.html">Progetti</a></li>
+      <li><a href="biglietto-da-visita.html">Biglietto da visita</a></li>
+      <li><a href="note-legali.html">Note legali</a></li>
+      <li><a href="note-legali.html#privacy">Privacy e cookie</a></li>
+    </ul>
+    <span class="footer-note">© <span id="footer-year">2026</span> Studio Menny — Servizio di siti web per attività</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
